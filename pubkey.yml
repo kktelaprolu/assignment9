@@ -1,6 +1,0 @@
----
-- hosts: devops
-  user: ubuntu
-  sudo: yes
-  roles:
-       - pubkey

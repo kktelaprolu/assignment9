@@ -1,0 +1,6 @@
+---
+# vars file for jenkins
+jenkins_port: 8080
+jenkins_user: admin
+jenkins_pass: admin
+

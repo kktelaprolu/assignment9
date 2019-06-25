@@ -1,0 +1,9 @@
+---
+# tasks file for tool
+- name: installing packages
+  apt: name={{ item }} state=present
+  with_items:
+      - vim
+      - ufw
+      - tree
+      - telnet

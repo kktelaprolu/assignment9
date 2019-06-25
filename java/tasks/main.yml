@@ -1,0 +1,13 @@
+---
+# tasks file for java
+- name: install add-repository
+  apt: name=software-properties-common state=latest
+- name: add oracle java repository
+  apt_repository: repo='ppa:webupd8team/java'
+- name: accept java8 license
+  debconf: name='oracle-java8-installer' question='shared/accepted-oracle-license-v1-1' value='true' vtype='select'
+- name: install oracle java 8
+  apt: name={{item}} state=latest
+  with_items:
+       - openjdk-8-jre-headless
+       - ca-certificates

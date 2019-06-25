@@ -1,0 +1,9 @@
+---
+- hosts: devops
+  user: ubuntu
+  sudo: yes
+  roles:
+       - pubkey1
+       - java
+       - tool
+       - jenkins
