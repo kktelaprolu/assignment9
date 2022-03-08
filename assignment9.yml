@@ -1,5 +1,5 @@
 ---
-- hosts: devops
+- hosts: devops-group
   user: ubuntu
   sudo: yes
   roles:
